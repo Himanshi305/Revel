@@ -1,2 +1,1 @@
-This is my first reactJS+tailwind project 
-if you find any mistake please let me know!
+Code using ReactJS, Tailwind CSS and Framer Motion,if you have any issue or have any suggestions let me know!.
