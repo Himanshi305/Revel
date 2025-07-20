@@ -6,7 +6,7 @@ function Phases() {
     <> 
 
     <div className="bg-black w-screen h-screen overflow-hidden relative ">
-      <video src="/moon.mp4" autoPlay loop muted className="absolute opacity-50" />
+      <video src="https://res.cloudinary.com/dwuljx2zv/video/upload/v1753012932/moon_o3jhqk.mp4" autoPlay loop muted className="absolute opacity-50" />
       <Swipper />
  
         <footer>
