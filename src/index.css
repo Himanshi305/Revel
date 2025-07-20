@@ -1,7 +1,10 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
   box-sizing:border-box;
+  font-family: 'Akira Expanded', sans-serif;
 }
 html, body {
   height: 100%;
@@ -21,12 +24,4 @@ html, body {
   }
 }
 
-@font-face {
-  font-family: "Akira";
-  src: url("./Akira.woff") format("woff");
-  font-weight:normal;
-  font-display: swap;
-}
-.use-myfont{
-  font-family: "Akira", sans-serif;
-}
+
