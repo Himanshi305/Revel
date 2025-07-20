@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+  box-sizing:border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* In your global.css or inside tailwind layers */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Opera */
+  }
+}
+
+@font-face {
+  font-family: "Akira";
+  src: url("./Akira.woff") format("woff");
+  font-weight:normal;
+  font-display: swap;
+}
+.use-myfont{
+  font-family: "Akira", sans-serif;
+}
