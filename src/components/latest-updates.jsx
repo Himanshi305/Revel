@@ -103,7 +103,14 @@ export default function News() {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await axios.get("https://newsapi.org/v2/everything");
+        const res = await axios.get("https://newsapi.org/v2/everything", {
+           params: {
+             q: "marvel cinematic universe OR avengers",
+             language: "en",
+             sortBy: "publishedAt",
+             apiKey: "2b2ef38f8a2644be865ce92abd45f9ff",
+           },
+         });
         setArticles(res.data.articles);
       } catch (error) {
         console.error(error);
