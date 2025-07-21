@@ -124,9 +124,10 @@ export default function News() {
     const fetchNews = async () => {
       try {
         const res = await axios.get("/api/news")
-        setArticles(res.data.articles);
+        setArticles(res.data.articles || []);
       } catch (error) {
         console.error(error);
+        setError("Failed to fetch news articles.");
       }
     };
     fetchNews();
