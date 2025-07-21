@@ -101,6 +101,26 @@ export default function News() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
+    const timer = setTimeout(() => setShow(true), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+  //here we are fecthing the data in real time in this file only
+  useEffect(() => {
+  if (!loading && articles.length > 0) {
+    let i = 0;
+    const interval = setInterval(() => {
+      setVisibleCards((prev) => {
+        if (prev < articles.length) return prev + 1;
+        clearInterval(interval);
+        return prev;
+      });
+      i++;
+    }, 300); // delay between each card (0.8s)
+    return () => clearInterval(interval);
+  }
+}, [loading, articles]);
+
+  useEffect(() => {
     const fetchNews = async () => {
       try {
         const res = await axios.get("https://newsapi.org/v2/everything", {

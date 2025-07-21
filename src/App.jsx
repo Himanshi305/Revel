@@ -1,7 +1,7 @@
 import Navbar from "./components/navbar";
 import "./App.css";
 import "./index.css";
-import LatestUpdates from "./components/latest-updates";
+import News from "./api/news";
 
 function App() {
   return (
@@ -76,7 +76,7 @@ function App() {
             </a>
           </div>
         </footer>
-        <LatestUpdates /> 
+        <News/> 
         <Navbar />
       </main>
       </div>
