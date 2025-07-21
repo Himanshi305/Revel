@@ -45,7 +45,7 @@ export default function CharacterCard({
   }, [infoVisible, character.name, info]); //call
   return (
     
-    <div className="poster top-30 md:top-30 max-w-60 md:max-w-80 relative">
+    <div className="poster top-30 md:top-0 md:mx-auto md:my-auto max-w-60 md:max-w-80 relative">
     <motion.div ref={cardRef} className="h-80 relative"
       onClick={toggleInfo}
       style = {{

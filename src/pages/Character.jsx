@@ -8,7 +8,7 @@ function Character() {
   return (
     <div className="relative scrollbar-hide overflow-x-hidden ">
       
-        <div className="absolute w-410 " >
+        <div className="absolute w-screen h-full " >
           <video className="" src="https://res.cloudinary.com/dwuljx2zv/video/upload/v1753012316/character_cpnl7z.mp4" autoPlay loop muted />
         </div>
         <div className="grid grid-cols-4 gap-6 p-4">
