@@ -103,7 +103,7 @@ export default function News() {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await axios.get("/api/news");
+        const res = await axios.get("https://newsapi.org/v2/everything");
         setArticles(res.data.articles);
       } catch (error) {
         console.error(error);
@@ -111,7 +111,7 @@ export default function News() {
     };
     fetchNews();
   }, []);
-  
+
   return (
     <div>
       <h2>Marvel Movie News</h2>
