@@ -92,58 +92,39 @@
 
 // export default LatestUpdates;
 // // import React from 'react'
+import { useEffect, useState } from "react";
+import axios from "axios";
 
+function App() {
+  const [articles, setArticles] = useState([]);
 
+  useEffect(() => {
+    async function fetchNews() {
+      try {
+        const res = await axios.get("/api/getNews?q=Marvel");
+        setArticles(res.data.results || []);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    }
+    fetchNews();
+  }, []);
 
+  return (
+    <div className="p-4">
+      <h1 className="text-2xl font-bold">Marvel Movie News</h1>
+      <ul className="mt-4">
+        {articles.map((article, index) => (
+          <li key={index} className="mb-3">
+            <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-blue-600">
+              {article.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
+export default App;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //me everywhere lol:)
