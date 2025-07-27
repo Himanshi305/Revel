@@ -66,7 +66,7 @@ export default function CharacterCard({ character }) {
       alignLeft
         ? "right-full mr-2"
         : "left-full ml-[-80px]"
-    } bg-black/80 backdrop-blur md:top-[-50px] left-45 p-5 md:p-2 top-10 shadow-2xl h-[250px] md:h-[620px] md:w-[400px] rounded-2xl`;
+    } bg-black/80 backdrop-blur left-45 p-5 md:p-2 top-10 shadow-2xl h-[250px] md:h-[620px] md:w-[280px] rounded-2xl`;
   };
 
   // Responsive styles for movie posters grid
