@@ -10,9 +10,9 @@ function Phases() {
           autoPlay
           loop
           muted
-          className="absolute inset-0 w-full h-full object-cover opacity-50 z-0"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
-        <div className="relative z-10">
+        <div className="relative -z-10">
           <Swipper />
         </div>
 

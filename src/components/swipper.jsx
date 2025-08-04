@@ -9,14 +9,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 const SwiperComponent = () => {
   return (
     <div className="relative w-screen h-screen flex items-center justify-center overflow-hidden">
-      {/* Responsive background video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/moon.mp4"
-        autoPlay
-        loop
-        muted
-      />
       {/* Swiper content above video */}
       <div className="relative z-10 w-screen max-w-3xl mx-auto p-5 md:p-10">
         <Swiper

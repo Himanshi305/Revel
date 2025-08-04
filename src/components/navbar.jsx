@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const Navbar = () => {
   return (
-    <div style={{ fontFamily: 'Akira, sans-serif' }}>
+    <div className=" top-0 z-50" style={{ fontFamily: 'Akira, sans-serif' }}>
       <div className="revel w-10 absolute top-5 left-2 md:left-5">
         <img className="" src="./REVEL.png" alt="" />
       </div>
