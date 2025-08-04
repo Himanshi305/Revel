@@ -7,17 +7,14 @@ export const characters = [
   {
     name: 'Hulk',
     image: '/Hulk2.png',
-    // className: 'relative w-[100%] md:w-[100%] ',
   },
   {
     name: 'IronMan',
     image: '/iron2.png',
-    // className: 'relative w-[100%] md:w-[150p%] ',
   },
   {
     name: 'CaptainAmerica',
     image: '/cap.png',
-    // className: 'relative w-[100%] md:w-[100%] ',
   },
   {
     name: 'BlackPanthar',

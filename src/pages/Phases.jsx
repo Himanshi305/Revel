@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar";
-import Swipper from "../components/swipper.jsx";
+import Swipper from "../components/swipper";
 
 function Phases() {
   return (

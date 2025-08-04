@@ -66,7 +66,7 @@ export default function CharacterCard({ character }) {
       alignLeft
         ? "right-full mr-2"
         : "left-full ml-[-80px]"
-    } bg-black/80 backdrop-blur left-45 p-5 md:p-2 top-10 shadow-2xl h-[250px] md:h-[620px] md:w-[280px] rounded-2xl`;
+    } bg-black/80 backdrop-blur left-45 p-5 md:p-2 top-10 shadow-2xl h-[250px] md:h-[450px] md:w-[280px] rounded-2xl`;
   };
 
   // Responsive styles for movie posters grid
@@ -74,7 +74,7 @@ export default function CharacterCard({ character }) {
     if (windowWidth < 768) {
       return "relative grid grid-cols-2 gap-2 h-32 overflow-auto scrollbar-hide z-15";
     }
-    return "relative grid grid-rows-1 md:grid-cols-1 h-40 md:h-140 rounded-2xl backdrop-blur overflow-auto scrollbar-hide gap-1 md:gap-2 z-15";
+    return "relative grid grid-rows-1 md:grid-cols-1 h-40 md:h-100 rounded-2xl backdrop-blur overflow-auto scrollbar-hide gap-1 md:gap-2 z-15";
   };
 
   // Responsive poster image classes
@@ -82,7 +82,7 @@ export default function CharacterCard({ character }) {
     if (windowWidth < 768) {
       return "w-full h-24 object-cover rounded";
     }
-    return "md:w-full w-40 h-38 md:h-full object-cover rounded";
+    return "md:w-full w-40 h-38 md:h-10/12 object-cover rounded";
   };
 
   return (
