@@ -9,7 +9,7 @@ function App() {
     <div className="relative">
           <main className="app-container overflow-x-hidden scrollbar-hide h-screen w-screen flex justify-center items-center relative">
         <video
-          className="w-screen h-screen object-cover scale-125 relative "
+          className="w-screen h-screen object-cover scale-125 relative"
           autoPlay
           loop
           muted
