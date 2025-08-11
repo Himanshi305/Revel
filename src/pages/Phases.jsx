@@ -12,9 +12,7 @@ function Phases() {
           muted
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
-        <div className="relative -z-10">
-          <Swipper />
-        </div>
+        <Swipper/>
 
         <footer>
           <div className="footer fixed bottom-0 left-0 w-full bg-gradient-to-r from-red-700 to-black flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 py-3 px-2 md:px-0 z-50">
